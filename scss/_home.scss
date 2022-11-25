@@ -5,12 +5,10 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: 80rem;
-
   .container {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-
     .left {
       width: 100%;
       max-width: 78.2rem;
@@ -50,7 +48,7 @@
       max-width: 44.3rem;
       position: relative;
       top: 9.7rem;
-
+  
       span {
         display: block;
         font-weight: 700;
@@ -91,6 +89,94 @@
       }
     }
   }
+  @media (max-width: 1200px) {
+    padding: 8rem 0;
+    height: auto;
+    background-position-x: 30%;
+    .container {
+      .left {
+        max-width: 64rem;
+        p {
+          font-size: 1.8rem;
+        }
+      }
+      .right {
+        top: 0;
+        max-width: 35.3rem;
+  
+        a {
+          button {
+            height: 19.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 6rem 0;
+    background-size: cover;
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .left {
+        text-align: center;
+        margin-bottom: 4rem;
+        .value {
+          justify-content: center;
+        }
+      }
+      .right {
+        text-align: center;
+        a {
+          button {
+            margin-bottom: 3rem;
+          }
+        }
+        .year-old {
+          flex-direction: column;
+          p {
+            margin-left: 0;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 560px) {
+    padding: 4rem 0;
+    .container {
+      .left {
+        h1 {
+          font-size: 6rem;
+          margin: 1.5rem 0;
+        }
+        P {
+          font-size: 1.4rem;
+          max-width: 80%;
+          margin: 0 auto;
+        }
+        .value {
+          flex-direction: column;
+        }
+      }
+      .right {
+        max-width: 31rem;
+        a {
+          button {
+            height: 17.7rem;
+          }
+        }
+        .year-old {
+          p {
+            line-height: 2.4rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-info-geral {
@@ -98,6 +184,9 @@
   height: 18rem;
   display: flex;
   align-items: center;
+
+  //
+  display: none;
   ul {
     display: flex;
     align-items: flex-start;
@@ -128,6 +217,8 @@
   background-repeat: no-repeat;
   background-position: top center;
 
+  //
+  display: none;
   .container {
     display: flex;
     align-items: center;
@@ -175,6 +266,8 @@
   background-repeat: no-repeat;
   overflow: hidden;
 
+  //
+  display: none;
   .descript {
     display: flex;
     align-items: flex-start;
